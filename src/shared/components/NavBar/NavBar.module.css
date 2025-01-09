@@ -1,0 +1,28 @@
+.header {
+  font-family: "OpenSans", sans-serif;
+  width: 90%;
+  margin-inline: auto;
+  padding-block: 5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 2.5rem;
+  width: auto;
+}
+
+.nav {
+  font-family: inherit;
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: max(3.5vw, 1.75rem);
+}
+
+.nav__link {
+  color: var(--clr-white);
+  text-decoration: none;
+}
