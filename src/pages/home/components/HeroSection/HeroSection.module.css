@@ -1,0 +1,64 @@
+.hero__wrapper {
+  background-color: var(--clr-primary-dark, #1c2230);
+  position: relative;
+  overflow: hidden;
+  padding-bottom: max(10vh, 5rem);
+  isolation: isolate;
+}
+
+.hero__bgPattern {
+  max-width: unset;
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  translate: -50% 0;
+  min-width: 100vw;
+  height: 50%;
+}
+
+.hero__bgPattern path {
+  fill: var(--clr-secondary-dark, #181f2b);
+}
+
+.hero {
+  width: var(--body-width, 85%);
+  margin-inline: auto;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__image {
+  pointer-events: none;
+  max-height: 45dvh;
+  padding-bottom: 2rem;
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 46rem;
+}
+
+.hero__title {
+  font-family: "Raleway", sans-serif;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+  color: var(--clr-white, #fff);
+  margin-bottom: 1.5rem;
+}
+
+.hero__description {
+  width: min(90%, 35rem);
+  font-family: "OpenSans", sans-serif;
+  font-size: clamp(0.95rem, 1.25vw, 1.1rem);
+  color: var(--clr-white, #fff);
+  margin-bottom: 2rem;
+}
+
+.hero__button {
+  width: min(90%, 16rem);
+}

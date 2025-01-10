@@ -6,6 +6,12 @@
 
 @font-face {
   font-family: "OpenSans";
+  src: url("/src/assets/fonts/OpenSans-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "OpenSans";
   src: url("/src/assets/fonts/OpenSans-Bold.ttf");
   font-weight: 700;
 }
@@ -24,14 +30,24 @@
 
 :root {
   --clr-white: #fff;
-  --clr-primary-dark: #1c2431;
-  --clr-secondary-dark: #181e2a;
+  --clr-primary-dark: #1c2230;
+  --clr-secondary-dark: #181f2b;
   --clr-dark-navy: #0c1524;
   --clr-turquoise: #66dddb;
+  --clr-light-blue: #53adc4;
+
+  --default-layout-width: 85%;
+  --header-width: var(--default-layout-width);
+  --body-width: var(--default-layout-width);
+  --footer-width: var(--default-layout-width);
 }
 
 body {
-  background-color: var(--clr-primary-dark);
+  background-color: var(--clr-secondary-dark);
   font-family: "OpenSans", system-ui, -apple-system, BlinkMacSystemFont,
     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+::selection {
+  background-color: var(--clr-light-blue);
 }

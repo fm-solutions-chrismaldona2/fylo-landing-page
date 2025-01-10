@@ -1,0 +1,51 @@
+.button {
+  position: relative;
+  font-family: "OpenSans", sans-serif;
+  cursor: pointer;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-white, #fff);
+  background: rgb(102, 221, 219);
+  background: linear-gradient(
+    140deg,
+    var(--clr-turquoise, #66dddb) 0%,
+    var(--clr-light-blue, #53adc4) 65%
+  );
+  transition: filter 0.35s ease, scale 0.35s ease;
+  overflow: hidden;
+}
+
+.button:hover {
+  filter: brightness(1.25);
+}
+
+.button:active {
+  scale: 0.965;
+}
+
+.button--small {
+  padding-block: min(5%, 0.75rem);
+  padding-inline: min(10%, 0.85rem);
+  font-size: clamp(0.75rem, 1vw, 0.9rem);
+}
+
+.button--normal {
+  padding-block: min(5%, 1rem);
+  padding-inline: min(10%, 1.25rem);
+  font-size: clamp(0.95rem, 1.5vw, 1rem);
+}
+
+.button--big {
+  padding-block: min(5%, 1rem);
+  padding-inline: min(10%, 1.75rem);
+  font-size: clamp(1.1rem, 2vw, 1.25rem);
+}
+
+.button--default {
+  border-radius: 0.25rem;
+}
+
+.button--rounded {
+  border-radius: 2rem;
+}

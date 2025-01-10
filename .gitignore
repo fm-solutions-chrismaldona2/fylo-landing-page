@@ -23,5 +23,5 @@ dist-ssr
 *.sln
 *.sw?
 
-# Ignore /src/assets/images folder
-/src/assets/images/
+# Design files
+src/assets/design

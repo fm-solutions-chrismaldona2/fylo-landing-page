@@ -1,0 +1,22 @@
+.svg--desktop,
+.svg--mobile {
+  pointer-events: none;
+}
+
+.svg--desktop {
+  display: block;
+}
+
+.svg--mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .svg--desktop {
+    display: none;
+  }
+
+  .svg--mobile {
+    display: block;
+  }
+}

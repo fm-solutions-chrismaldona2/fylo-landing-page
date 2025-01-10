@@ -6,7 +6,9 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": "/src",
+      "@shared": "/src/shared/",
+      "@src": "/src/",
+      "@pages": "/src/pages/",
     },
   },
 });

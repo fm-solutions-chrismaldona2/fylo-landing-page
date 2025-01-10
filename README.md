@@ -5,4 +5,5 @@ A React-based landing page created for the [Fylo Landing Page challenge](https:/
 ## Technologies Used
 
 - **TypeScript**: JavaScript with static typing for better error handling.
+  > _First time using TypeScript, so any feedback is appreciated!_
 - **React**: Library for building interactive UIs.
