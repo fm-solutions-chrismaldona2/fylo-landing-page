@@ -2,7 +2,7 @@
   background-color: var(--clr-primary-dark, #1c2230);
   position: relative;
   overflow: hidden;
-  padding-bottom: max(10vh, 5rem);
+  padding-bottom: max(10vh, 4rem);
   isolation: isolate;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .hero__title {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway", var(--default-font-family, system-ui);
   font-size: clamp(1.75rem, 3vw, 2.35rem);
   color: var(--clr-white, #fff);
   margin-bottom: 1.5rem;
@@ -53,7 +53,7 @@
 
 .hero__description {
   width: min(90%, 35rem);
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", var(--default-font-family, system-ui);
   font-size: clamp(0.95rem, 1.25vw, 1.1rem);
   color: var(--clr-white, #fff);
   margin-bottom: 2rem;

@@ -1,8 +1,8 @@
 import { SvgProps } from "@shared/types";
-import styles from "./BackgroundPattern.module.css";
+import styles from "./CurvedBgPattern.module.css";
 import clsx from "clsx";
 
-const BackgroundPattern = ({ className, fill = "#181F2B" }: SvgProps) => {
+const CurvedBgPattern = ({ className, fill = "#181F2B" }: SvgProps) => {
   return (
     <>
       <svg
@@ -51,4 +51,4 @@ const BackgroundPattern = ({ className, fill = "#181F2B" }: SvgProps) => {
   );
 };
 
-export default BackgroundPattern;
+export default CurvedBgPattern;

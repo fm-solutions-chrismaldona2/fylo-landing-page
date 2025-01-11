@@ -1,12 +1,13 @@
 import Logo from "../Logo/Logo";
 import styles from "./NavBar.module.css";
+import UnderlinedLink from "@shared/components/UnderlinedLink/UnderlinedLink";
 
 const NavBar = () => {
   return (
     <div className={styles.header__wrapper}>
       <header className={styles.header}>
         <a
-          href="/"
+          href="#"
           aria-label="Go to homepage"
           className={styles.logo__container}
         >
@@ -15,19 +16,13 @@ const NavBar = () => {
         <nav className={styles.nav}>
           <ul className={styles.nav__links}>
             <li>
-              <a href="/" className={styles.nav__link}>
-                Features
-              </a>
+              <UnderlinedLink href="#">Features</UnderlinedLink>
             </li>
             <li>
-              <a href="/" className={styles.nav__link}>
-                Team
-              </a>
+              <UnderlinedLink href="#">Team</UnderlinedLink>
             </li>
             <li>
-              <a href="/" className={styles.nav__link}>
-                Sign in
-              </a>
+              <UnderlinedLink href="#">Sign in</UnderlinedLink>
             </li>
           </ul>
         </nav>

@@ -9,6 +9,7 @@ export default defineConfig({
       "@shared": "/src/shared/",
       "@src": "/src/",
       "@pages": "/src/pages/",
+      "@assets": "/src/assets/",
     },
   },
 });

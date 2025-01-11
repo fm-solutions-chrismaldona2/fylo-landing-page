@@ -1,6 +1,6 @@
 .button {
   position: relative;
-  font-family: "OpenSans", sans-serif;
+  font-family: "OpenSans", var(--default-font-family, system-ui);
   cursor: pointer;
   border: none;
   font-size: 1rem;

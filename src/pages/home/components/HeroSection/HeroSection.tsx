@@ -1,7 +1,7 @@
-import Illustration from "@src/assets/images/illustration-intro.png";
+import Illustration from "@assets/images/illustrations/illustration-intro.png";
 import Button from "@shared/components/Button/Button";
 import styles from "./HeroSection.module.css";
-import BackgroundPattern from "../BackgroundPattern/BackgroundPattern";
+import CurvedBgPattern from "../CurvedBgPattern/CurvedBgPattern";
 
 const HeroInfo = {
   title: "All your files in one secure location, accesible anywhere.",
@@ -10,20 +10,18 @@ const HeroInfo = {
   image: Illustration,
 };
 
-function HeroSection() {
+const HeroSection = () => {
   const { title, description, image } = HeroInfo;
 
   return (
     <div className={styles.hero__wrapper}>
-      <section
-        className={styles.hero}
-        role="region"
-        aria-labelledby="hero-title"
-      >
+      <section className={styles.hero} aria-labelledby="hero-title">
         <img
           src={image}
           alt="Illustration of people organizing and securing files."
           role="img"
+          width={720}
+          height={534}
           className={styles.hero__image}
         />
         <div className={styles.hero__content}>
@@ -43,9 +41,9 @@ function HeroSection() {
           </Button>
         </div>
       </section>
-      <BackgroundPattern className={styles.hero__bgPattern} />
+      <CurvedBgPattern className={styles.hero__bgPattern} />
     </div>
   );
-}
+};
 
 export default HeroSection;

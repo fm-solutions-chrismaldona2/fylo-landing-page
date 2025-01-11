@@ -18,6 +18,8 @@ picture,
 video,
 canvas,
 svg {
+  width: auto;
+  height: auto;
   display: block;
   max-width: 100%;
 }
