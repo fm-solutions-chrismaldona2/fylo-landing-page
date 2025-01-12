@@ -1,6 +1,6 @@
 import Logo from "../Logo/Logo";
 import styles from "./NavBar.module.css";
-import UnderlinedLink from "@shared/components/UnderlinedLink/UnderlinedLink";
+import CustomLink from "@shared/components/CustomLink/CustomLink";
 
 const NavBar = () => {
   return (
@@ -16,13 +16,19 @@ const NavBar = () => {
         <nav className={styles.nav}>
           <ul className={styles.nav__links}>
             <li>
-              <UnderlinedLink href="#">Features</UnderlinedLink>
+              <CustomLink href="#" underlineOnHover>
+                Features
+              </CustomLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Team</UnderlinedLink>
+              <CustomLink href="#" underlineOnHover>
+                Team
+              </CustomLink>
             </li>
             <li>
-              <UnderlinedLink href="#">Sign in</UnderlinedLink>
+              <CustomLink href="#" underlineOnHover>
+                Sign in
+              </CustomLink>
             </li>
           </ul>
         </nav>

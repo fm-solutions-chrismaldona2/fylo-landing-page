@@ -1,0 +1,24 @@
+.alert {
+  pointer-events: none;
+  user-select: none;
+  position: fixed;
+  isolation: isolate;
+
+  width: min(300px, var(--body-width, 85%));
+
+  top: 2rem;
+  left: 50%;
+  translate: -50%;
+
+  color: var(--clr-white, #fff);
+  padding: 1.25rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  background-color: #68d9f5a9;
+  backdrop-filter: blur(1rem);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 2rem rgba(71, 143, 179, 0.25);
+}

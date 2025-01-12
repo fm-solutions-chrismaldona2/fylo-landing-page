@@ -2,7 +2,7 @@ import { SvgProps } from "@shared/types";
 import { memo } from "react";
 
 export const AccessAnywhereIcon = memo(
-  ({ className, fill = "#62e0d9" }: SvgProps) => {
+  ({ className, fill = "#62e0d9", ...props }: SvgProps) => {
     return (
       <svg
         width="83"
@@ -10,6 +10,7 @@ export const AccessAnywhereIcon = memo(
         viewBox="0 0 83 78"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
+        {...props}
       >
         <g fill="none" fillRule="evenodd">
           <path
@@ -59,60 +60,63 @@ export const AccessAnywhereIcon = memo(
   }
 );
 
-export const AnyFileIcon = memo(({ className, fill = "#62e0d9" }: SvgProps) => {
-  return (
-    <svg
-      width="91"
-      height="64"
-      viewBox="0 0 91 64"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
-      <g fill="none" fillRule="evenodd">
-        <path
-          d="M85.588 59C88.025 59 90 57.144 90 54.853V9.236c0-1.526-1.318-2.764-2.941-2.764L85.589 59zM15 12.048v40.047C15 55.908 18.098 59 21.92 59h63.668a4.147 4.147 0 0 1-4.152-4.143V3.762A2.766 2.766 0 0 0 78.668 1h-16.61l-5.536 8.286H17.768A2.766 2.766 0 0 0 15 12.048z"
-          stroke={fill}
-          strokeWidth="1.405"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M41.28 27.561v3.201c0 1.061.841 1.92 1.88 1.92h3.13m2.505 0v-.219c0-.679-.264-1.33-.734-1.811l-4.794-4.902a2.48 2.48 0 0 0-1.772-.75h-13.99C26.12 25 25 26.147 25 27.561v26.89c0 1.414 1.121 2.56 2.505 2.56H46.29c1.383 0 2.505-1.146 2.505-2.56v-8.963"
-          fill={fill}
-        />
-        <path
-          d="M33.766 49.33v3.84h3.757l11.898-12.164-3.757-3.841-11.898 12.164zm15.655-8.324l1.328-1.358a1.951 1.951 0 0 0 0-2.717l-1.1-1.124a1.85 1.85 0 0 0-2.657 0l-1.328 1.358 3.757 3.841z"
-          stroke="#FFF"
-          strokeWidth=".803"
-          strokeLinejoin="round"
-        />
-        <path
-          d="M30.01 37.805h12.523m-12.524 3.841h11.272m-11.272 3.842h7.514"
-          stroke="#FFF"
-          strokeWidth=".803"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        <g>
+export const AnyFileIcon = memo(
+  ({ className, fill = "#62e0d9", ...props }: SvgProps) => {
+    return (
+      <svg
+        width="91"
+        height="64"
+        viewBox="0 0 91 64"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        {...props}
+      >
+        <g fill="none" fillRule="evenodd">
           <path
-            d="M32.367 59.432c0 1.972-1.61 3.572-3.596 3.572H3.596c-1.985 0-3.596-1.6-3.596-3.572v-17.86C0 39.6 1.61 38 3.596 38h25.175c1.985 0 3.596 1.6 3.596 3.572v17.86zM10.789 44.55a2.987 2.987 0 0 1-2.997 2.976 2.987 2.987 0 0 1-2.997-2.976 2.987 2.987 0 0 1 2.997-2.977 2.987 2.987 0 0 1 2.997 2.977z"
+            d="M85.588 59C88.025 59 90 57.144 90 54.853V9.236c0-1.526-1.318-2.764-2.941-2.764L85.589 59zM15 12.048v40.047C15 55.908 18.098 59 21.92 59h63.668a4.147 4.147 0 0 1-4.152-4.143V3.762A2.766 2.766 0 0 0 78.668 1h-16.61l-5.536 8.286H17.768A2.766 2.766 0 0 0 15 12.048z"
+            stroke={fill}
+            strokeWidth="1.405"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M41.28 27.561v3.201c0 1.061.841 1.92 1.88 1.92h3.13m2.505 0v-.219c0-.679-.264-1.33-.734-1.811l-4.794-4.902a2.48 2.48 0 0 0-1.772-.75h-13.99C26.12 25 25 26.147 25 27.561v26.89c0 1.414 1.121 2.56 2.505 2.56H46.29c1.383 0 2.505-1.146 2.505-2.56v-8.963"
             fill={fill}
           />
           <path
+            d="M33.766 49.33v3.84h3.757l11.898-12.164-3.757-3.841-11.898 12.164zm15.655-8.324l1.328-1.358a1.951 1.951 0 0 0 0-2.717l-1.1-1.124a1.85 1.85 0 0 0-2.657 0l-1.328 1.358 3.757 3.841z"
             stroke="#FFF"
-            strokeWidth=".65"
+            strokeWidth=".803"
+            strokeLinejoin="round"
+          />
+          <path
+            d="M30.01 37.805h12.523m-12.524 3.841h11.272m-11.272 3.842h7.514"
+            stroke="#FFF"
+            strokeWidth=".803"
             strokeLinecap="round"
             strokeLinejoin="round"
-            d="M26.786 58.656L19.737 51.2 16.8 54.307l-4.112-4.349-8.224 8.698"
           />
+          <g>
+            <path
+              d="M32.367 59.432c0 1.972-1.61 3.572-3.596 3.572H3.596c-1.985 0-3.596-1.6-3.596-3.572v-17.86C0 39.6 1.61 38 3.596 38h25.175c1.985 0 3.596 1.6 3.596 3.572v17.86zM10.789 44.55a2.987 2.987 0 0 1-2.997 2.976 2.987 2.987 0 0 1-2.997-2.976 2.987 2.987 0 0 1 2.997-2.977 2.987 2.987 0 0 1 2.997 2.977z"
+              fill={fill}
+            />
+            <path
+              stroke="#FFF"
+              strokeWidth=".65"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M26.786 58.656L19.737 51.2 16.8 54.307l-4.112-4.349-8.224 8.698"
+            />
+          </g>
         </g>
-      </g>
-    </svg>
-  );
-});
+      </svg>
+    );
+  }
+);
 
 export const CollaborationIcon = memo(
-  ({ className, fill = "#62e0d9" }: SvgProps) => {
+  ({ className, fill = "#62e0d9", ...props }: SvgProps) => {
     return (
       <svg
         width="86"
@@ -120,6 +124,7 @@ export const CollaborationIcon = memo(
         viewBox="0 0 86 71"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
+        {...props}
       >
         <g
           stroke={fill}
@@ -154,7 +159,7 @@ export const CollaborationIcon = memo(
 );
 
 export const SecurityIcon = memo(
-  ({ className, fill = "#62e0d9" }: SvgProps) => {
+  ({ className, fill = "#62e0d9", ...props }: SvgProps) => {
     return (
       <svg
         width="70"
@@ -162,6 +167,7 @@ export const SecurityIcon = memo(
         viewBox="0 0 70 88"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
+        {...props}
       >
         <g stroke={fill} strokeWidth="3.064" fill="none" fillRule="evenodd">
           <path d="M43.703 35.501l-12.23 12.474-8.999-9.177-4.499 4.589 13.497 13.766L52.08 36.137l-4.5-4.589z" />
@@ -173,58 +179,67 @@ export const SecurityIcon = memo(
   }
 );
 
-export const EmailIcon = memo(({ className, fill = "#fff" }: SvgProps) => {
-  return (
-    <svg
-      width="20"
-      height="16"
-      viewBox="0 0 20 16"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
-      <g fill="none" fillRule="evenodd">
-        <path d="M-2-4h24v24H-2z" />
+export const EmailIcon = memo(
+  ({ className, fill = "#fff", ...props }: SvgProps) => {
+    return (
+      <svg
+        width="20"
+        height="16"
+        viewBox="0 0 20 16"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        {...props}
+      >
+        <g fill="none" fillRule="evenodd">
+          <path d="M-2-4h24v24H-2z" />
+          <path
+            d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+            fill={fill}
+          />
+        </g>
+      </svg>
+    );
+  }
+);
+
+export const LocationIcon = memo(
+  ({ className, fill = "#fff", ...props }: SvgProps) => {
+    return (
+      <svg
+        width="13"
+        height="18"
+        viewBox="0 0 13 18"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        {...props}
+      >
         <path
-          d="M18 0H2C.9 0 0 .9 0 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 14h-2V5.2L10 9 4 5.2V14H2V2h1.2L10 6.2 16.8 2H18v12z"
+          d="M6.188 0C2.74 0 0 2.79 0 6.3 0 10.98 6.188 18 6.188 18s6.187-7.02 6.187-11.7c0-3.51-2.74-6.3-6.188-6.3zm0 8.55c-1.238 0-2.21-.99-2.21-2.25s.972-2.25 2.21-2.25c1.237 0 2.21.99 2.21 2.25s-.973 2.25-2.21 2.25z"
           fill={fill}
+          fillRule="evenodd"
         />
-      </g>
-    </svg>
-  );
-});
+      </svg>
+    );
+  }
+);
 
-export const LocationIcon = memo(({ className, fill = "#fff" }: SvgProps) => {
-  return (
-    <svg
-      width="13"
-      height="18"
-      viewBox="0 0 13 18"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
-      <path
-        d="M6.188 0C2.74 0 0 2.79 0 6.3 0 10.98 6.188 18 6.188 18s6.187-7.02 6.187-11.7c0-3.51-2.74-6.3-6.188-6.3zm0 8.55c-1.238 0-2.21-.99-2.21-2.25s.972-2.25 2.21-2.25c1.237 0 2.21.99 2.21 2.25s-.973 2.25-2.21 2.25z"
-        fill={fill}
-        fillRule="evenodd"
-      />
-    </svg>
-  );
-});
-
-export const PhoneIcon = memo(({ className, fill = "fff" }: SvgProps) => {
-  return (
-    <svg
-      width="18"
-      height="18"
-      viewBox="0 0 18 18"
-      xmlns="http://www.w3.org/2000/svg"
-      className={className}
-    >
-      <path
-        d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
-        fill={fill}
-        fillRule="evenodd"
-      />
-    </svg>
-  );
-});
+export const PhoneIcon = memo(
+  ({ className, fill = "#fff", ...props }: SvgProps) => {
+    return (
+      <svg
+        width="18"
+        height="18"
+        viewBox="0 0 18 18"
+        xmlns="http://www.w3.org/2000/svg"
+        className={className}
+        {...props}
+      >
+        <path
+          d="M17 12.5c-1.2 0-2.4-.2-3.6-.6-.3-.1-.7 0-1 .2l-2.2 2.2c-2.8-1.4-5.1-3.8-6.6-6.6l2.2-2.2c.3-.3.4-.7.2-1-.3-1.1-.5-2.3-.5-3.5 0-.6-.4-1-1-1H1C.4 0 0 .4 0 1c0 9.4 7.6 17 17 17 .6 0 1-.4 1-1v-3.5c0-.6-.4-1-1-1zM16 9h2c0-5-4-9-9-9v2c3.9 0 7 3.1 7 7zm-4 0h2c0-2.8-2.2-5-5-5v2c1.7 0 3 1.3 3 3z"
+          fill={fill}
+          fillRule="evenodd"
+        />
+      </svg>
+    );
+  }
+);

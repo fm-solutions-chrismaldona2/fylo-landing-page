@@ -5,7 +5,7 @@ import {
   SecurityIcon,
   CollaborationIcon,
   AnyFileIcon,
-} from "@shared/components/Icons/Icons";
+} from "@shared/components/Icons/CustomIcons";
 
 interface FeatureItemProps {
   id?: number;

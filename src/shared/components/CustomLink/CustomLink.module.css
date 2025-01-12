@@ -4,17 +4,16 @@
   font-weight: 400;
   color: var(--text-color);
   text-decoration: none;
-  transition: text-shadow 0.4s ease, letter-spacing 0.15s ease;
+  transition: text-shadow 0.4s ease;
   cursor: pointer;
 }
 
 .link:hover {
   text-shadow: -0.2px 0, 0 0.2px, 0.2px 0, 0 -0.2px, -0.2px -0.2px, 0.2px 0.2px,
     -0.2px 0.2px, 0.2px -0.2px;
-  letter-spacing: 0.2px;
 }
 
-.link::after {
+.link--hover-underlined::after {
   content: "";
   position: absolute;
   left: 50%;
@@ -28,7 +27,7 @@
   transition: width 0.4s ease, background-color 0.4s ease;
 }
 
-.link:hover::after {
+.link--hover-underlined:hover::after {
   background-color: var(--text-color);
   width: 100%;
 }

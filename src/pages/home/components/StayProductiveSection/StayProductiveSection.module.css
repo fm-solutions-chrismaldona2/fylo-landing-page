@@ -4,7 +4,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
   align-items: center;
-  padding-block: max(14vh, 3rem);
+  padding-block: max(12vh, 3rem) max(8vh, 3rem);
   column-gap: max(3vw, 3rem);
   row-gap: max(4vh, 4rem);
 }
@@ -30,14 +30,14 @@
   max-width: 20ch;
   font-family: "Raleway", var(--default-font-family, system-ui);
   line-height: 125%;
-  font-size: clamp(1.3rem, 3.5vw, 2.3rem);
+  font-size: clamp(1.5rem, 3.5vw, 2.3rem);
   color: var(--clr-white, #fff);
 }
 
 .section__description,
 .section__link {
   font-family: "OpenSans", var(--default-font-family, system-ui);
-  font-size: clamp(0.85rem, 1.25vw, 1rem);
+  font-size: clamp(0.9rem, 1.25vw, 1rem);
 }
 
 .section__description {
