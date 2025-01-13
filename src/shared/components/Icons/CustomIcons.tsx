@@ -243,3 +243,46 @@ export const PhoneIcon = memo(
     );
   }
 );
+
+export const ArrowIcon = memo(
+  ({ className, fill = "#fff", ...props }: SvgProps) => (
+    <svg
+      width="25"
+      height="25"
+      viewBox="0 0 25 25"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+      {...props}
+    >
+      <path
+        fillRule="evenodd"
+        clipRule="evenodd"
+        d="M15.0359 4L13.4677 5.4875L19.7404 11.4375H1V13.5625H19.7404L13.472 19.5125L15.0402 21L24 12.5L15.0359 4Z"
+        fill={fill}
+      />
+    </svg>
+  )
+);
+
+export const MenuIcon = memo(
+  ({ className, fill = "#fff", ...props }: SvgProps) => {
+    return (
+      <svg
+        width="24"
+        height="24"
+        viewBox="0 0 20 20"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        className={className}
+        {...props}
+      >
+        <path
+          fill={fill}
+          fillRule="evenodd"
+          d="M19 4a1 1 0 01-1 1H2a1 1 0 010-2h16a1 1 0 011 1zm0 6a1 1 0 01-1 1H2a1 1 0 110-2h16a1 1 0 011 1zm-1 7a1 1 0 100-2H2a1 1 0 100 2h16z"
+        />
+      </svg>
+    );
+  }
+);

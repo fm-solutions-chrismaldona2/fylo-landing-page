@@ -6,6 +6,8 @@ import IvaBoydAvatar from "@assets/images/avatars/profile-3.jpg";
 import DefaultAvatar from "@assets/images/avatars/default.png";
 
 import BgQuotes from "@assets/images/illustrations/bg-quotes.png";
+import { motion, useInView } from "motion/react";
+import { useRef } from "react";
 
 interface Testimonial {
   id: number;
@@ -76,9 +78,17 @@ const Testimonial = ({ id, message, author }: Testimonial) => {
 };
 
 const TestimonialSection = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
     <section className={styles.testimonials__wrapper}>
-      <div className={styles["testimonials__inner-wrapper"]}>
+      <motion.div
+        className={styles["testimonials__inner-wrapper"]}
+        ref={ref}
+        variants={container}
+        initial="hidden"
+        animate={isInView && "visible"}
+      >
         <img
           src={BgQuotes}
           alt=""
@@ -88,9 +98,19 @@ const TestimonialSection = () => {
         {testimonials.map(({ id, message, author }) => (
           <Testimonial key={id} id={id} message={message} author={author} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
 
 export default TestimonialSection;
+
+const container = {
+  hidden: { opacity: 0, y: 50, scale: 0.8 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { duration: 0.85, type: "spring" },
+  },
+};

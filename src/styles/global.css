@@ -35,6 +35,7 @@
 
 :root {
   --clr-white: #fff;
+  --clr-red: #c03939;
   --clr-primary-dark: #1c2230;
   --clr-secondary-dark: #181f2b;
   --clr-dark-navy: #0c1524;
@@ -62,5 +63,6 @@ body {
 }
 
 ::selection {
-  background-color: var(--clr-light-blue);
+  background-color: var(--clr-light-blue, #53adc4);
+  color: var(--clr-white, #fff);
 }

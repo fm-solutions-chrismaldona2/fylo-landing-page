@@ -12,7 +12,7 @@ const BaseLayout = ({ children }: LayoutProps) => {
     <div role="region" className={styles.layout}>
       <NavBar />
       {children}
-      <Footer />
+      <Footer showForm />
     </div>
   );
 };

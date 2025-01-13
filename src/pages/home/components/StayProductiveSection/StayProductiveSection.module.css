@@ -47,10 +47,27 @@
 .section__link {
   --link-text-color: var(--clr-turquoise, #66dddb);
   --link-text-hover-color: var(--clr-white, #fff);
+  --transition-duration: 0.5s;
   position: relative;
   color: var(--link-text-color);
-  transition: color 0.5s ease;
+  transition: color var(--transition-duration) ease;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.arrowIcon {
+  padding: 0.19rem;
+  height: 0.8rem;
+  width: auto;
+  background-color: var(--link-text-color);
+  border-radius: 50%;
+  transition: background-color var(--transition-duration) ease;
+}
+
+.arrowIcon path {
+  fill: var(--clr-secondary-dark, #181f2b);
 }
 
 .section__link::after {
@@ -63,7 +80,7 @@
   width: 100%;
   background-color: var(--link-text-color);
   border-radius: 0.25rem;
-  transition: background-color 0.5s ease;
+  transition: background-color var(--transition-duration) ease;
 }
 
 .section__link:hover {
@@ -71,6 +88,10 @@
 }
 
 .section__link:hover::after {
+  background-color: var(--link-text-hover-color);
+}
+
+.section__link:hover > .arrowIcon {
   background-color: var(--link-text-hover-color);
 }
 

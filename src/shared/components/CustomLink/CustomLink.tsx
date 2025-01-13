@@ -6,11 +6,16 @@ const CustomLink = ({
   color,
   underlineOnHover,
   children,
+  className,
   ...props
 }: CustomLinkProps) => {
-  const linkClassName = clsx(styles.link, {
-    [styles["link--hover-underlined"]]: underlineOnHover,
-  });
+  const linkClassName = clsx(
+    styles.link,
+    {
+      [styles["link--hover-underlined"]]: underlineOnHover,
+    },
+    className
+  );
 
   return (
     <a

@@ -1,6 +1,5 @@
 import styles from "./Footer.module.css";
 import Logo from "@shared/components/Logo/Logo";
-
 import {
   LocationIcon,
   PhoneIcon,
@@ -13,13 +12,28 @@ import {
   InstagramIcon,
   GithubIcon,
 } from "@shared/components/Icons/SocialMediaIcons";
-
 import CustomLink from "@shared/components/CustomLink/CustomLink";
+import EarlyAccessForm from "@features/early-access/components/EarlyAccessForm/EarlyAccessForm";
 
-const Footer = () => {
+interface FooterProps {
+  showForm?: boolean;
+}
+
+const Footer = ({ showForm = false }: FooterProps) => {
   return (
     <>
-      <div className={styles.footer__wrapper}>
+      {showForm && (
+        <div className={styles.form__wrapper}>
+          <div className={styles["form__inner-wrapper"]}>
+            <EarlyAccessForm />
+          </div>
+        </div>
+      )}
+
+      <div
+        className={styles.footer__wrapper}
+        style={showForm ? {} : { marginTop: "6.75rem" }}
+      >
         <footer className={styles.footer} role="contentinfo">
           <header className={styles.footer__header}>
             <a href="#" aria-label="Go to homepage">

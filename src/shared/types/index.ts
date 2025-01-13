@@ -25,9 +25,10 @@ export interface CustomLinkProps
   color?: `#${string}`;
   underlineOnHover?: boolean;
   children: ReactNode;
+  className?: string;
 }
 
 export interface Notification {
   message: string;
-  type?: "info" | "success" | "error" | "warning";
+  type?: "success" | "warning" | "info" | "error";
 }

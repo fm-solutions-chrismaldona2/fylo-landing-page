@@ -1,5 +1,6 @@
 import styles from "./StayProductiveSection.module.css";
 import Illustration from "@assets/images/illustrations/illustration-stay-productive.png";
+import { ArrowIcon } from "@shared/components/Icons/CustomIcons";
 
 const StayProductiveSection = () => {
   return (
@@ -25,6 +26,7 @@ const StayProductiveSection = () => {
         </p>
         <a href="#" className={styles.section__link} role="link">
           See how Fylo works
+          <ArrowIcon className={styles.arrowIcon} />
         </a>
       </div>
     </section>

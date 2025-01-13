@@ -1,0 +1,76 @@
+.form__container {
+  padding-block: 2.85rem 2.75rem;
+  padding-inline: min(10%, 5.5rem);
+  background-color: #1c2230;
+  color: var(--clr-white, #fff);
+  text-align: center;
+}
+
+.form__header {
+  font-family: "OpenSans", var(--default-font-family, sans-serif);
+  margin-bottom: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.form__title {
+  font-family: inherit;
+  font-weight: 600;
+  font-size: clamp(1.4rem, 2vw, 2rem);
+}
+
+.form__description {
+  font-family: inherit;
+  font-weight: 400;
+  max-width: 90%;
+  font-size: clamp(0.95rem, 1vw, 1rem);
+}
+
+.form__button {
+  flex-grow: 1;
+  white-space: nowrap;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.form__input-wrapper {
+  position: relative;
+  flex-grow: 1;
+  flex-basis: 60%;
+  min-width: 0;
+}
+
+.form__input {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1rem;
+  border: none;
+  padding-block: min(5%, 1rem);
+  padding-inline: min(10%, 2rem);
+  border-radius: 2.5rem;
+}
+
+.form__error {
+  max-width: 80%;
+  overflow: hidden;
+  white-space: nowrap;
+
+  text-overflow: ellipsis;
+  font-family: "OpenSans", var(--default-font-family, sans-serif);
+  position: absolute;
+  color: var(--clr-red, #a53645);
+  font-size: 0.8rem;
+  font-weight: 700;
+  bottom: -1.5rem;
+  left: min(10%, 2rem);
+}
+
+.form__input::placeholder {
+  color: #cacaca;
+}
