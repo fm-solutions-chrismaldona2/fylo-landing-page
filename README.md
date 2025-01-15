@@ -4,7 +4,7 @@ A React-based landing page created for the [Fylo Landing Page challenge](https:/
 
 ## Live Site
 
-[Netlify Deploy]()
+[Netlify Deploy](https://fylolandinghomepage.netlify.app/)
 
 ## Technologies Used
 
