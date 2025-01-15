@@ -33,7 +33,7 @@
 
 .hero__image {
   pointer-events: none;
-  max-height: 45dvh;
+  max-height: 45vh;
   padding-bottom: 2rem;
 }
 
